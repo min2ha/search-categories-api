@@ -15,7 +15,7 @@ def read_category(category_id: int, q: Optional[str] = None):
     return {"category_id": category_id, "q": q}
 
 
-@app.route('/search', methods=['GET', 'POST'])
+@api.route('/search', methods=['GET', 'POST'])
 # @login_required
 def search():
     # form = SearchForm()
